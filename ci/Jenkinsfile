@@ -6,8 +6,9 @@ pipeline {
 		stage("Init") {
 			steps {
 				echo "============================="
-				echo "This is feature/audio-driver branch"
+				echo "This is feature/video-driver branch"
 				echo "============================="
+				bat "exit 1"
 			}
 		}
 	}
