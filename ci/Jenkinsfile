@@ -3,10 +3,23 @@ pipeline {
 	agent any
 	
 	stages {
-		stage("Init") {
+		stage("Build-master") {
+            when {
+                branch 'multi/master'
+            }
 			steps {
 				echo "============================="
-				echo "This is feature/audio-driver branch"
+				echo "This is master branch"
+				echo "============================="
+			}
+		}
+		stage("Build-master") {
+            when {
+                branch 'multi/feature/*'
+            }
+			steps {
+				echo "============================="
+				echo "This is feature branch"
 				echo "============================="
 			}
 		}
