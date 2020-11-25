@@ -5,7 +5,9 @@ pipeline {
 	stages {
 		stage("Init") {
 			steps {
-				echo "Do nothing"
+				echo "============================="
+				echo "This is feature/audio-driver branch"
+				echo "============================="
 			}
 		}
 	}
