@@ -4,7 +4,9 @@ pipeline {
 	
 	stages {
 		stage("Init") {
-			echo "Do nothing"
+			steps {
+				echo "Do nothing"
+			}
 		}
 	}
 }
