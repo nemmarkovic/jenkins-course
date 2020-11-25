@@ -13,7 +13,7 @@ pipeline {
 				echo "============================="
 			}
 		}
-		stage("Build-master") {
+		stage("Build-feature") {
             when {
                 branch 'multi/feature/*'
             }
