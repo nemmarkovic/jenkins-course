@@ -56,7 +56,7 @@ pipeline {
                         archive: true,
                         dir: "pipeline"
                     )
-                    bat 'exit 1'
+                    //bat 'exit 1'
                 }
                 rtUpload (
                         serverId: 'local-artifactory',
